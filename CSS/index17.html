@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.container{
+    background-color: aqua;
+    max-width: 800px;
+    min-height: 400px
+}
+
+.container p{
+    background-color: red;
+    color: white;
+    border: 1px solid black;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+.flexcont{
+    display: flex;
+   
+
+}
+p{
+    width: 350px;
+    height: 70px;
+}
+
+p:nth-child(1){
+    /* flex-grow: 1; */
+    flex-shrink: 1;   
+    flex-basis: 100px;
+}
+p:nth-child(2){
+    flex-grow: 2;
+}
+
+    
+</style>
+<body>
+    
+    <div class="container flexcont">
+        <p>Hey</p>
+        <p>there</p>
+
+
+
+    </div>
+
+</body>
+</html>

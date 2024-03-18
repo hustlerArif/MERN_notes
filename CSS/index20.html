@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 100px 300px 100px;
+    /* grid-auto-rows: 500px; */
+    grid-template-areas: 
+    "Navbar Navbar "
+    "content sidebar"
+    "Footer Footer"
+    ;
+
+}
+
+.item{
+    /* color: white; */
+    font-size: 150%;
+    padding: 10px;
+}
+
+.Navbar{
+    grid-area: Navbar;
+    background-color: red;
+    color: white;
+}
+.content{
+    grid-area: content;
+    background-color: blue;
+    color: white;
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: brown;
+    color: rgb(121, 50, 50);
+}
+.Footer{
+    grid-area: Footer;
+    background-color: pink;
+    color: white;
+}
+
+
+</style>
+<body>
+    
+<div class="container">
+
+    <div class="item Navbar">Navbar</div>
+    <div class="item content">content</div>
+    <div class="item sidebar">sidebar</div>
+    <div class="item Footer">Footer</div>
+
+</div>
+
+
+</body>
+</html>

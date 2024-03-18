@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* p{
+        color: red;
+    }
+
+.head1{
+    color: blue;
+}
+#head2{
+    color: brown;
+    font-family: 'Courier New', Courier, monospace;
+}
+input[type="password"]:focus{
+    background-color: aqua;
+} */
+
+/* psueod slector */
+p:first-child{      
+    color: blue;
+}
+
+p:nth-child(4){
+    color: red;
+}
+p::first-letter{
+    font-size: 30px;
+}
+
+/* pseudo element selector */
+.head1::before{
+    content: '"';
+    color: red;
+    font-size: 50px;
+}
+.head1::after{
+    content: '"';
+    color: brown;
+    font-size: 50px;
+}
+
+</style>
+<body>
+
+ <h1 class="head1">heading 1 continues</h1>
+    <h2 id="head2">this is heading2</h2>
+    <p>this is a simple paragraph</p>
+
+    <input type="text" placeholder="type Name">
+    <input type="password" placeholder="type password">
+
+<!-- 
+    <p>This is a paragraph</p>
+    <p>This is a paragraph</p>
+    <p>This is a paragraph</p>
+    <p>This is a paragraph</p>
+    <p>This is a paragraph</p> -->
+
+</body>
+</html>

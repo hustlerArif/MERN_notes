@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+*{
+    margin: 0%;
+    padding: 0%;
+}
+nav{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+nav ul{
+    display: flex;
+    color: white;
+    gap: 10px;
+}
+nav ul li{
+    list-style: none;
+}
+.styled-link{
+    text-decoration: none;
+    color: white;
+    transition: all 0.1s ease-in-out;
+}
+/* .styled-link:visited{
+    color: red;
+} */
+.styled-link:hover{
+    color: red;
+    font-size: large;
+}
+
+  </style>
+  <body>
+    <nav>
+      <img
+        src="https://media.geeksforgeeks.org/gfg-gg-logo.svg"
+        alt="GfG logo"
+      />
+      <ul>
+        <a href="index8.html" class="styled-link">Home</a>
+        <a href="./About.html" class="styled-link">About</a>
+        <a href="./Contact.html" class="styled-link">Contact</a>
+        
+      </ul>
+    </nav>
+    <h1>This is Home page</h1>
+  </body>
+</html>

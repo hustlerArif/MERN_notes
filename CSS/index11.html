@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* .inlineBlock{
+        background-color: red;
+        height: 100px;
+        width: 100px;
+        margin: 5px;
+        display: inline-block;
+    } */
+/* .container{
+    display: flex;
+    background-color: yellowgreen;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+/* .flex-box{
+    background-color: brown;
+    height: 100px;
+    width: 100px;
+    margin: 5px; */
+    /* display: flex;   can't target here, move to parent div */
+/* } */
+
+.container{
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: 200px 100px 200px;
+    background-color: aqua;
+
+}
+.grid-example{
+    background-color: red;
+    margin: 5px;
+    font-size: 40px;
+    text-align: center;
+    padding: 5px;
+}
+
+</style>
+<body>
+
+    <!-- <div class="container">
+        <div class="inlineBlock"></div>
+        <div class="inlineBlock"></div>
+        <div class="inlineBlock"></div>
+    </div> -->
+<!-- 
+    <div class="container">
+        <div class="flex-box"></div>
+        <div class="flex-box"></div>
+        <div class="flex-box"></div>
+    </div> -->
+
+<div class="container">
+    <div class="grid-example">1</div>
+    <div class="grid-example">2</div>
+    <div class="grid-example">3</div>
+    <div class="grid-example">4</div>
+    <div class="grid-example">5</div>
+    <div class="grid-example">6</div>
+    
+
+</div>
+
+</body>
+</html>
