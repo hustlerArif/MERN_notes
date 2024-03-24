@@ -1,0 +1,38 @@
+body{
+    background-color: bisque;
+}
+/* btn-red is not defined in html */
+.btn-red{
+    background-color: red;
+    color: white;
+}
+.btn-blue{
+    background-color: blue;
+    color: white;
+}
+.btn-yellow{
+    background-color: yellow;
+    color: white;
+}
+.body-chg{
+    background-color: violet;
+}
+
+#form{
+    border: 1px solid black;
+}
+#div{
+    border: 1px solid black;
+}
+#para{
+    border: 1px solid black;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    background-color: white;
+    /* object-fit: contain; */
+    border: 3px solid white; 
+}
